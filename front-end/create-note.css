@@ -1,0 +1,52 @@
+.create-note-header {
+    margin: 20px;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.create-note-form {
+    width: max-content;
+    margin: 0 auto;
+}
+
+.create-note-form-text-area {
+    font-family: Raleway, sans-serif;
+    font-size: 20px;
+    height: 300px;
+    width: 500px;
+}
+
+.create-note-form-text-box {
+    font-family: Raleway, sans-serif;
+    font-size: 20px;
+    width: 500px;
+}
+
+.create-note-form-button-wrap {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.create-note-form-button {
+    padding: 10px;
+    font-size: 20px;
+    background-color: rgb(242, 139, 139);
+    border-radius: 10px;
+    border: none;
+    margin: 0;
+    color: blanchedalmond;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.create-note-form-button:hover {
+    background-color:rgb(150, 84, 84);
+    color:blue;
+    text-decoration: underline;
+}
+
+.create-note-form-button:active {
+    transform: scale(0.9);
+}
+
