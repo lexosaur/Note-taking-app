@@ -1,7 +1,7 @@
 const fetchNotes = () => {
     const notesList = [
         {
-            notes: "This is a new note"
+            notes: "This is a new note. Hello"
             author: "ABC"
         },
         {
@@ -14,10 +14,14 @@ const fetchNotes = () => {
     
     for (let i = 0; 1< notesList.length; i++) {
         const tag = `
-        <li class="view-note-block">
-            <div>${notesList[i]}</div>
-            <div class="view-note-author"></div>
-        </li>
-        `
+            <li class="view-note-block">
+                <div>${notesList[i]}</div>
+                <div class="view-note-author">${notesList[i].author}</div>
+             </li>
+            `;
+
+        noteListTag.innerHTML += tag;  
     }
-}
+};
+
+fetchNotes();
