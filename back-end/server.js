@@ -1,12 +1,19 @@
 const express = require("express");
 //const path = require("path");
-const connect = require("./connectToDatabase");
+const connect = require("./connectMongo");
 const app = express();
+
+app.use(express.json());
 
 const User = require("./schema");
 
-app.get("/", async (req, res) => {
-    const {first_name, last_name, email, number} = req.query;
-    //const name = req.query.name;
-    //const email *= req.query.email; //req.query = {}
-})
+app.post("/", async (req, res) => {
+    const notes = req.body;
+    console.log(notes);
+    return res.json(true);
+});
+
+app.listen(4300, () => {
+    console.log("Server started");
+    connect();
+});
