@@ -1,6 +1,4 @@
-const { assertValidExecutionArguments } = require("graphql/execution/execute");
-
-const createNotes = () => {
+const createNotes = async () => {
     const notesText = document.getElementById("note-text").value;
     const authorText = document.getElementById("author-text").value;
 

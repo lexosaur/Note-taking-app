@@ -19,6 +19,11 @@ app.post("/", async (req, res) => {
     return res.json(true);
 });
 
+app.get("/", async (req, res) => {
+    const noteList = await User.find();
+    return res.json(noteList);
+})
+
 app.listen(4300, () => {
     console.log("Server started");
     connect();
