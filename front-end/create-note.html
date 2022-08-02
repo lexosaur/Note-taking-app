@@ -7,6 +7,7 @@
     <title>Create Notes</title>
     <link rel="stylesheet" href="./main.css">
     <link rel="stylesheet" href="./create-note.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
 </head>
 <body>
     <nav class="notes-navigation-bar" style="">
@@ -27,21 +28,22 @@
     <div class="create-note-header">Create Notes</div>
     <div class="create-note-form">
         <textarea class="create-note-form-text-area"
-        placeholder="Write a new note!"></textarea>
+        placeholder="Write a new note!" id="note-text"></textarea>
         <div>
             <input 
             class="create-note-form-text-box" 
             type="text" 
             placeholder="Write your name"
+            id="author-text"
             />
         </div>
-        <div class="create-note-form-button-wrap" style="tet-align:center">
-            <button class="create-note-form-button">
+        <div class="create-note-form-button-wrap" style="text-align:center">
+            <button class="create-note-form-button" onclick="createNotes">
                 Save note :)
             </button>
         </div>
     </div>
     
-
+<script src="./create-note.js"></script>
 </body>
 </html>
